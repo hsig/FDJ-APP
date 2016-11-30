@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="FSDJ">
+  <head>
+    <meta charset="utf-8">
+    <title>FDJ</title>
+    <link rel="stylesheet" href="/css/lib/bootstrap-3.3.6-dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/balance.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/balance">FSDJ</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#/balance">Balance <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <section id="content" class="col-md-12" >
+      <div class="view-container">
+        <div ng-view class="view-frame"></div>
+      </div>
+    </section>
+    <section id="footer" class="col-md-12">
+    </section>
+
+    <script type="text/javascript" src="/js/lib/angular/angular.js"></script>
+    <script type="text/javascript" src="/js/lib/angular/angular-route.js"></script>
+    <script type="text/javascript" src="/App/MainApp.js" ></script>
+    <script type="text/javascript" src="/App/controllers/controllers.js"></script>
+    <script type="text/javascript" src="/App/controllers/balance/balanceCtrl.js"></script>
+    <script type="text/javascript" src="/App/services/services.js"></script>
+  </body>
+</html>
