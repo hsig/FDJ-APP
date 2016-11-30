@@ -30,4 +30,4 @@
 
     // listen (start app with node server.js) ======================================
     app.listen(port);
-    console.log("Test-FSDJ running on " + port);
+    console.log("Test-FDJ running on " + port);
