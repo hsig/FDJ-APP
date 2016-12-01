@@ -1,0 +1,20 @@
+<section class="col-md-12" >
+  <div class="col-md-12">
+    <h2>Roberval <small>Trouver la boule ayant le poid le plus élevé</small></h2>
+    <hr>
+  </div>
+  <div class="col-md-12">
+    <fieldset  ng-click="choose(boule.num)" class="col-md-1" data-ng-repeat="boule in boules">
+      <div >{{boule.num}}</div>
+    </fieldset>
+  </div>
+  <div class="col-md-2 col-md-offset-4 jumbotron">
+      La boule choisie num : {{num}}
+      <small ng-if="count">vous avez joué {{numGame}} fois.</small>
+  </div>
+
+  <div class="col-md-4 col-md-offset-4" ng-init="go=false">
+    <button class="btn btn-info" ng-disabled="!go" ng-click="executer()">Executer</button>
+    <button class="btn btn-warning" ng-show="count" ng-click="reset()">Reset</button>
+  </div>
+</section>
